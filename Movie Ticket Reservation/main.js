@@ -1,10 +1,3 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 //Set minimum value date in datepicker as today
 var today = new Date().toISOString().split('T')[0];
 document.getElementById("date")[0].setAttribute('min', today);
