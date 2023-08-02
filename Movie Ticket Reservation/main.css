@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 26, 2016, 3:22:59 PM
+    Author     : Bl3iD
+*/
+html, body{
+  height:100%;
+  margin:0% auto;
+}
+
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+    background-color: black;
+}
+
+#img {
+    width: 1130px;
+    height: 100%;
+    background: url("background 1.jpg"), url("background 2.jpg"), url("background 3.jpg");
+    background-size: 1130px 312.5px, 1130px 312px, 1130px 312px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%, 100% 50%, 100% 100%;
+    box-shadow: 0 0 10px #D7EBF9;
+}
+
+#booking {
+    text-align:center;
+    width: 800px;
+    height: 100%;
+}
+
+#cinema {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#movie_booking {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 27%;
+    margin: 0 auto;
+}
+
+#movie_booked {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 27%;
+    margin: 0 auto;
+}
+
+
+fieldset {
+    border: 1px solid #AED0EA;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #D7EBF9;
+}
+
+legend{
+  background: -webkit-linear-gradient(30deg, #2F8FC6, #000000 90%);
+  border-radius: 5px 5px 5px 5px;
+  color: #FF9A00;
+  font-size: 120%;
+  text-align: center;
+}
+
+p{
+  overflow: hidden;
+}
+
+label{
+  width: 30%;
+  text-align: right;
+  float: left;
+  clear: both;
+  color: #2F8FC6;
+}
+
+p input, p select{
+  width: 40%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #2779AA;
+}
+
+#movie_name_booked, #theater , #date_booked, #email_booked, #tickets_booked, #total_price_view{
+  color: #AC2727;
+  text-align: center
+}
+
+#perTicketPrice{
+  color: #27AC42;
+  text-align: center;
+}

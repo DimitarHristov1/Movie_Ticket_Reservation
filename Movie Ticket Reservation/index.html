@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Movie Ticket Reservation System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div id="cinema">
+        <div id="booking">
+            <fieldset id="movie_booking">
+                <legend>Запазване на билети</legend>
+                <p>
+                    <label for="movie_name">Филм</label>
+                    <select id="movie_name" onchange="changeMovie_Img()">
+                        <option></option>
+                        <option value="Terminator">Terminator</option>
+                        <option value="Star Wars">Star Wars</option>
+                        <option value="Star Trek">Star Trek</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="theaters">Кино салон</label>
+                    <select id="theaters">
+                        <option></option>
+                        <option value="Кино салон 1">Кино салон 1</option>
+                        <option value="Кино салон 2">Кино салон 2</option>
+                        <option value="Кино салон 3">Кино салон 3</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="date">Дата</label>
+                    <input type="date" id="date" />
+                </p>
+
+                <p>
+                    <label for="email">Имейл</label>
+                    <input type="text" id="email"/>
+                </p>
+
+                <p>
+                    <label for="tickets_quantity">Брой билети</label>
+                    <input type="number" name="tickets_quantity" id="tickets_quantity" pattern="0-9" />
+                </p>
+
+                <input type="button" id="button1" value="Виж поръчката си" onClick="Main()" />
+            </fieldset>
+            <p id="perTicketPrice">Цена за билет = &#36; 5.00</p>
+            <fieldset id="movie_booked">
+                <legend>Данни за поръчката</legend>
+                <p>
+                    <span style="color: #2779AA">Избран филм</span>
+                    <span id="movie_name_booked">(още не е избрано)</span>
+                </p>
+                <p>
+                    <span style="color: #2779AA">Кино салон</span>
+                    <span id="theater">(още не е избрано)</span>
+                </p>
+                <p>
+                    <span style="color: #2779AA">Дата</span>
+                    <span id="date_booked">(още не е избрано)</span>
+                </p>
+                <p>
+                    <span style="color: #2779AA">Имейл</span>
+                    <span id="email_booked">(още не е избрано)</span>
+                </p>
+                <p>
+                    <span style="color: #2779AA">Брой билети</span>
+                    <span id="tickets_booked">(още не е избрано)</span>
+                </p>
+                <p>
+                    <span style="color: #2779AA">Крайна цена </span>
+                    <span id="total_price_view">(още не е избрано)</span>
+                </p>
+                <input type="button" style="display: none" id="button2" value="Запазване на билети" onClick="myFunction()" />
+            </fieldset>
+        </div>
+        <div id="img"> </div>
+    </div>
+</body>
+</html>
